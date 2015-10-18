@@ -1,0 +1,33 @@
+
+{  
+        "events" : [{  
+            "date":"October 15-19",  
+            "title":"SAP TechEd 2012",  
+            "location":"Las Vegas",  
+            "description":"SAP TechEd is the premier technical conference offering over 1,000 hours on SAP technologies, focused on SAP NetWeaver, analytics, and mobile platforms. Enhance your skills by attending hands-on workshops, demo-driven lectures, and Q&A sessions on the latest developments in analytics, mobile, cloud, database, and in-memory computing. Make valuable connections with peers and distinguished IT professionals from our SAP community."  
+        },  
+        {  
+            "date":"November 13-15",  
+            "title":"SAPPHIRE NOW 2012",  
+            "location":"Madrid",  
+            "description":"Transform your business with essential information and best practices for business executives, lines of business, and IT decision makers, and business managers."  
+        },  
+        {  
+            "date":"November 13-16",  
+            "title":"SAP TechEd 2012",  
+            "location":"Madrid",  
+            "description":"Run smarter with education for IT professionals. Over 500 hours of hands-on workshops and in-depth technical training plus access to all SAPPHIRE NOW content."  
+        },  
+        {  
+            "date":"November 28-30",  
+            "title":"SAP TechEd 2012",  
+            "location":"Bangalore",  
+            "description":"Registration opens this summer. Check back for event details."  
+        },  
+        {  
+            "date":"December 4-5",  
+            "title":"SAP TechEd 2012",  
+            "location":"Shanghai",  
+            "description":"Registration opens this summer. Check back for event details."  
+        }]              
+}  

@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+
+        <!-- we are not doing this here, because it's not cachebuster safe! -->
+        <!-- <link rel="stylesheet" type="text/css" href="./css/app.css" />  -->
+
+        <script id="sap-ui-bootstrap"
+            type="text/javascript"
+            src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+            data-sap-ui-theme="sap_goldreflection"
+            data-sap-ui-libs="sap.ui.commons,sap.ui.ux3">
+        </script>
+        <!-- instead of sap_goldreflection you could also use for example sap_bluecrystal -->
+
+        <!-- Simple app.js load from file alternative -->
+        <!--
+        <script src="app.js">
+        </script>
+        -->
+        <script>
+            (function () {
+                "use strict";
+
+                //register modules paths
+                jQuery.sap.registerModulePath("js.modules", "./js/modules/");        //controllers and views
+                jQuery.sap.registerModulePath("js.lib", "./js/lib/");    //our own libs
+                jQuery.sap.registerModulePath("js.lib.ext", "./js/lib/ext/");     //for 3rd party libs, i.e. D3.js
+                jQuery.sap.registerModulePath("js.control", "./js/control/");     //our custom controls
+
+                //load our core app lib and the global css (if cachebuster was configured, then this would be cachebuster safe!)
+                jQuery.sap.require("js/app");
+                app.includeStyleSheet('css/app.css');
+
+                //now load other stuff that should be globally available
+                jQuery.sap.require("js/appConstants");
+                jQuery.sap.require("js/appUtils");
+
+                //init our app
+                app.init();
+
+            })();
+        </script>
+
+    </head>
+    <body class="sapUiBody" role="application">
+        <div id="content"></div>
+    </body>
+</html>

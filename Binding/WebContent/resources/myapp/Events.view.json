@@ -1,0 +1,51 @@
+
+{   
+   "Type":"sap.ui.core.mvc.JSONView",  
+   "content": [{  
+          "Type":"sap.ui.table.DataTable",  
+          "id":"eventList",  
+          "title":"Events Calendar",  
+          "visibleRowCount":5,  
+          "selectionMode":"Single",  
+          "columns" : [{  
+              "Type":"sap.ui.table.Column",  
+              "label":"Date",  
+              "width":"20%",  
+              "template": {  
+                  "Type":"sap.ui.commons.TextField",  
+                  "value":"{date}"  
+              }            
+          },  
+        {  
+              "Type":"sap.ui.table.Column",  
+              "label":"Event",  
+              "template": {  
+                  "Type":"sap.ui.commons.TextField",  
+                  "value":"{title}"  
+              }            
+          },  
+        {  
+              "Type":"sap.ui.table.Column",  
+              "label":"Location",  
+              "width":"20%",  
+              "template": {  
+                  "Type":"sap.ui.commons.TextField",  
+                  "value":"{location}"  
+              }            
+          }],  
+          "rowSelect":"onRowSelect"                     
+   },  
+   {  
+        "Type":"sap.ui.commons.Panel",  
+        "id":"eventDetail",  
+        "title":{  
+            "Type":"sap.ui.commons.Title",  
+            "text":"{title}"  
+        },  
+        "showCollapseIcon":false,  
+       "content":[{  
+            "Type":"sap.ui.commons.TextView",  
+            "text":"{description}"  
+        }]  
+   }]  
+}  

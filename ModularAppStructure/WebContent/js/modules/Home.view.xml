@@ -1,0 +1,9 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.ui.commons"
+    xmlns:demo="demo.control"
+    controllerName="demo.modules.Home" xmlns:html="http://www.w3.org/1999/xhtml">
+
+    <TextView text="Home"/>
+    <html:div>My Div</html:div>
+    <nabi:D3Circle radius="40"/>    <!-- custom control -->
+
+</core:View>

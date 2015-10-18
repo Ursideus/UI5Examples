@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" type="text/css" href="tdg/css/style.css">
+
+        <title>TDG Demo App</title>
+
+        <script id="sap-ui-bootstrap" src="resources/sap-ui-core.js"
+        	data-sap-ui-preload=""
+        	data-sap-ui-xx-supportedLanguages="EN,HE"
+	        data-sap-ui-libs="sap.m" data-sap-ui-theme="sap_bluecrystal"
+	        data-sap-ui-xx-bindingSyntax="complex"
+	        data-sap-ui-resourceroots='{ 
+	        	"sap.ui.demo.tdg": "./tdg" 
+	        }'>
+        </script>
+        <!--
+        Pairing a namespace and folder location in the data-sap-ui-resourceroots declares
+        where artifacts with that namespace can be found. In this example we are saying
+        that the artifacts starting "sap.ui.demo.tdg" are to be found in the same folder ("./") as this index file
+        -->
+        <!--
+        By default, the container will look for a component called "Component" in this namespace,
+        which thus translates to sap.ui.demo.tdg.Component. This will be found in the file Component.js in the same folder,
+        because we've specified this same folder as being where resources in the sap.ui.demo.tdg namespace are to be found.
+        -->
+        <script>
+            sap.ui.getCore().attachInit(function () {
+                new sap.m.Shell({
+                    app: new sap.ui.core.ComponentContainer({
+                        height : "100%",
+                        name : "sap.ui.demo.tdg"
+                    })
+                }).placeAt("content");
+            });
+        </script>
+    </head>
+    <body class="sapUiBody" id="content" />
+</html>

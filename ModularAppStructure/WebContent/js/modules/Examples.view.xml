@@ -1,0 +1,7 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.ui.commons"
+    controllerName="js.modules.Examples" xmlns:html="http://www.w3.org/1999/xhtml">
+
+    <TextView text="Examples"/>
+    <html:div>My Div</html:div>
+
+</core:View>
